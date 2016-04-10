@@ -18,6 +18,16 @@ function inverso(){
 	var num = document.getElementById("n1");
 	num.value = 1/num.value;
 }
+
+function sqrt(){
+	var num = document.getElementById("n1");
+	if(num.value<0){
+		num.value = "Error";
+	}else{
+		num.value = Math.sqrt(num);
+	}
+}
+
 </script>
 </head>
 <body>
@@ -27,5 +37,6 @@ Numero:
 <p>
 <button onclick="cuadrado()">x<sup>2</sup></button>
 <button onclick="inverso()">1/x</button>
+<button onclick="sqrt()">sqrt(x)</button>
 </body>
 </html>
